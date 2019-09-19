@@ -8,13 +8,18 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 98.4722, 132.943 )
+position = Vector2( 92.3336, -29.1186 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+zoom = Vector2( 3, 3 )
+smoothing_enabled = true
 
 [node name="StaticBody2D" parent="." instance=ExtResource( 2 )]
 position = Vector2( 113.092, 506.493 )
 
 [node name="platform2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 555.832, 333.716 )
+position = Vector2( 555.832, 334.379 )
 
 [node name="platform3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 882.783, 122.682 )
