@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://environment/platform.tscn" type="PackedScene" id=2]
+[ext_resource path="res://environment/platform2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://environment/platform3.tscn" type="PackedScene" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 98.4722, 132.943 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 113.092, 506.493 )
+
+[node name="platform2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 555.832, 333.716 )
+
+[node name="platform3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 882.783, 122.682 )
